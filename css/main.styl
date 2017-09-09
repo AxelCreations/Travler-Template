@@ -1,6 +1,66 @@
 @import nib
 
+gris = #EBEBEB
+morado = #8038C2
 
+// INDEX STYLES==============================================
+
+header
+	background gris
+	height 230px	
+
+	.container
+		max-width 991px
+		.row
+			.logo
+		
+			#navigator
+				// 165*113
+				
+				div
+					height 113px
+					padding 0
+					position relative
+
+					ul
+						top 20px
+						padding 0
+						position absolute
+		
+						li
+							background linear-gradient(bottom, #F0F0F9, white 55%)
+							background-clip border-box
+							border-bottom 5px solid morado
+							box-shadow 4px 4px 7px rgba(black, 0.6)
+							cursor pointer
+							height 113px
+							margin 0
+							position relative
+							width 165px
+
+							&:hover
+								background white
+								border-bottom 13px solid #701DBB
+								border-right none
+								box-shadow 0px 3px 7px rgba(black, 0.6)
+								height 124px
+								top -11px
+								z-index 100
+
+						.Active
+							background white
+							border-bottom 13px solid #701DBB
+							border-right none
+							box-shadow 0px 3px 7px rgba(black, 0.6)
+							height 124px
+							top -11px
+							width 170px
+							z-index 100
+
+
+
+
+// END OF INDEX STYLES=======================================
 
 
 
