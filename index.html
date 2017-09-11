@@ -2,10 +2,11 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Shopy Template</title>
+        <title>Travler Template</title>
         <meta name="description" content="The Travler">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1, minimum-scale=1">
 
+        <link rel="stylesheet" href="css/fontastic-travler-icons.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -18,17 +19,30 @@
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-lg-4">
-                        <div class="logo">
-                            <div>travler</div>
+                    <div id="navUp">
+                        <div class="col-xs-12 col-lg-4 noPadding">
+                            <div class="logo">
+                                <figure>
+                                    <img src="imgs/travler-logo.png" alt="Travler">
+                                </figure>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <div>Quicklinks</div>
-                        <div>Select from dropdown</div>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <div>Search for Something Here</div>
+                        <div class="col-xs-12 col-lg-4">
+                            <div class="quick">
+                                <div class="inlineBlock quick-link">Quicklinks <span class="icon-location"></span></div>
+                                <div class="quick-line"></div>
+                                <div class="pull-right inlineBlock quick-control">
+                                    <span class="quick-control-selector">Select from dropdown</span>
+                                    <span class="icon-angle-up quick-control-up" id="quick-up"></span>
+                                    <span class="icon-angle-down quick-control-down" id="quick-up"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4">
+                            <div class="search">
+                                <input type="text" placeholder="Search for something here" /><span class="icon-clock-o"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                     <!-- NavBar -->
@@ -36,7 +50,30 @@
                     <div id="navigator">
                         <div class="col-xs-12">
                             <ul class="list-inline">
-                                <li>Travel Guide</li><li class="Active">Services</li><li>About</li><li>The Tour</li><li>How To</li><li>Contact</li>
+                                <li>
+                                    <span class="icon icon-world"></span>
+                                    <span class="title">Travel Guide</span>
+                                </li>
+                                <li class="Active">
+                                    <span class="icon icon-paper-plane-o"></span>
+                                    <span class="title">Services</span>
+                                </li>
+                                <li>
+                                    <span class="icon icon-file-text-o"></span>
+                                    <span class="title">About</span>
+                                </li>
+                                <li>
+                                    <span class="icon icon-map-pin-streamline"></span>
+                                    <span class="title">The Tour</span>
+                                </li>
+                                <li>
+                                    <span class="icon icon-world"></span>
+                                    <span class="title">How To</span>
+                                </li>
+                                <li>
+                                    <span class="icon icon-file-text-o"></span>
+                                    <span class="title">Contact</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -45,7 +82,14 @@
             </div>
         </header>
             <!-- END OF HEADER -->
-
+            
+            <!-- INIT OF HOME SECTION -->
+        <article id="home">
+            <div id="home-bg">
+                <!-- <img src="imgs/home-bg.png" alt="BackGround" height="537px" width="1550px"> -->
+            </div>
+        </article>
+            <!-- END OF HOME SECTION -->
             
     </body>
 </html>

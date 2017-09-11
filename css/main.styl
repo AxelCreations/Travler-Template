@@ -1,66 +1,201 @@
 @import nib
 
-gris = #EBEBEB
-morado = #8038C2
 
-// INDEX STYLES==============================================
+// INIT GENERAL STYLES AND VARIABLES=====================
+gris = #EBEBEB
+darkGris = #707070
+textGris = #C7C7C7
+morado = #8038C2
+darkMorado = #701DBB
+
+body
+	font-size 16px
+
+.inlineBlock
+	display inline-block
+
+.noPadding
+	padding 0
+
+// END OF GENERAL STYLES AND VARIABLES===================
+
+// INIT NAVIGATION TYLES==============================================
 
 header
 	background gris
 	height 230px	
+	font-size 0.8em
 
 	.container
 		max-width 991px
+
 		.row
-			.logo
-		
+			#navUp
+				align-items center
+				display flex
+				height 130px
+
+				.logo
+					figure
+						position relative
+						left -0.5em
+						img
+							height 65px
+							width 270px
+
+				.quick
+					color textGris
+					font-weight bold
+					position relative
+
+					&-link
+						position relative
+						padding-right 2em
+
+						span
+							font-size 1.8em
+							position absolute
+							top -0.2em
+							right -0.25em			
+
+					&-line
+						border-right 0.1em solid textGris
+						height 25px
+						left 8.8em
+						position absolute
+						top -0.4em
+
+					&-control
+						color darkMorado
+						padding-right 2.5em
+						position relative
+
+						&-up, &-down
+							cursor pointer
+							font-size 1.3em
+							font-weight 900
+							position absolute
+							right 0.4em
+							top 0
+							transition 0.3s all ease-out
+
+							&:hover
+								font-size 2.2em
+								text-shadow 0.1em 0.1em 0.2em rgba(darkGris, .75)
+								right 0em
+
+						&-up
+							top -0.36em
+
+							&:hover
+								top -0.8em
+
+						&-down
+							top 0.18em
+							
+							&:hover
+								top 0em
+
+				.search
+					padding 0.7em 0 0 1em
+					height 46px
+					background white
+					position relative
+					vertical-align bottom
+
+					input
+						color morado
+						display inline-block
+						height 80%
+						font-size 0.9em
+						width 80%
+						border none
+						outline none
+						
+						&:focus
+							font-size 1.1em
+
+					span
+						color darkMorado
+						cursor pointer
+						font-size 2em
+						font-weight 200
+						position absolute
+						right 0.6em
+						top 0.3em
+						transform scale(-1, 1)
+
 			#navigator
-				// 165*113
-				
 				div
 					height 113px
 					padding 0
 					position relative
 
 					ul
-						top 20px
 						padding 0
 						position absolute
-		
+						letter-spacing -0.5em
+
 						li
 							background linear-gradient(bottom, #F0F0F9, white 55%)
-							background-clip border-box
 							border-bottom 5px solid morado
 							box-shadow 4px 4px 7px rgba(black, 0.6)
+							color darkGris
 							cursor pointer
+							font-size 1.3em
+							font-weight bold
 							height 113px
-							margin 0
+							letter-spacing 0
+							padding-top 1.7em
 							position relative
+							transition border-bottom 0.4s ease-in-out
 							width 165px
+
+							.icon, .title
+								display block
+								text-align center
+
+							.icon
+								font-size 1.6em 
+
+							.title
+								// 
 
 							&:hover
 								background white
-								border-bottom 13px solid #701DBB
+								border-bottom 13px solid darkMorado
 								border-right none
 								box-shadow 0px 3px 7px rgba(black, 0.6)
+								color darkMorado
 								height 124px
 								top -11px
-								z-index 100
+								z-index 101
+
+								.icon, .title
+									position relative
+									top 10px
 
 						.Active
 							background white
 							border-bottom 13px solid #701DBB
 							border-right none
 							box-shadow 0px 3px 7px rgba(black, 0.6)
+							color darkMorado
 							height 124px
 							top -11px
 							width 170px
 							z-index 100
+							
+							.icon, .title
+								position relative
+								top 10px
+
+#home
+	.home 
+		// 
 
 
-
-
-// END OF INDEX STYLES=======================================
+// END OF NAVIGATION TYLES=======================================
 
 
 
