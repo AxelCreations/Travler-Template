@@ -164,6 +164,7 @@ header .container .row #navigator div ul li {
   -ms-transition: border-bottom 0.4s ease-in-out;
   transition: border-bottom 0.4s ease-in-out;
   width: 165px;
+  z-index: 50;
 }
 header .container .row #navigator div ul li .icon,
 header .container .row #navigator div ul li .title {
@@ -205,4 +206,48 @@ header .container .row #navigator div ul .Active .icon,
 header .container .row #navigator div ul .Active .title {
   position: relative;
   top: 10px;
+}
+#home {
+  height: 540px;
+  min-height: 540px;
+  position: relative;
+}
+#home #home-bg {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  top: -12px;
+  width: 100%;
+}
+#home #home-bg img {
+  z-index: 0;
+}
+#home .home-circle {
+  background: #451a4a;
+  border-radius: 50%;
+  height: 138px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 138px;
+}
+#home .home-circle img {
+  left: 41px;
+  position: relative;
+  top: 42px;
+}
+#features {
+  background: #2d2d2d;
+  min-height: 500px;
+  padding-top: 4em;
+}
+#features h1 {
+  color: #fff;
+  margin: 0;
+  text-align: center;
 }

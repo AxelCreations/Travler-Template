@@ -150,6 +150,7 @@ header
 							position relative
 							transition border-bottom 0.4s ease-in-out
 							width 165px
+							z-index 50
 
 							.icon, .title
 								display block
@@ -185,15 +186,50 @@ header
 							top -11px
 							width 170px
 							z-index 100
-							
+
 							.icon, .title
 								position relative
 								top 10px
 
 #home
-	.home 
-		// 
+	height 540px
+	min-height 540px
+	position relative
 
+	#home-bg
+		height 100%
+		overflow hidden
+		position relative
+		top -12px
+		width 100%
+
+		img
+			z-index 0
+
+	.home-circle
+		background #451A4A
+		border-radius 50%
+		height 138px
+		left 50%
+		position absolute
+		top 50%
+		transform translate(-50%, -50%)
+		width 138px
+
+		img
+			left 41px
+			position relative
+			top 42px
+
+#features
+	background #2D2D2D
+	min-height 500px
+	padding-top 4em
+
+	h1
+		color white
+		margin 0
+		text-align center
 
 // END OF NAVIGATION TYLES=======================================
 
