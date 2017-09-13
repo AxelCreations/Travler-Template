@@ -243,11 +243,26 @@ header .container .row #navigator div ul .Active .title {
 }
 #features {
   background: #2d2d2d;
-  min-height: 500px;
+  min-height: 700px;
   padding-top: 4em;
 }
-#features h1 {
+#features h2 {
   color: #fff;
   margin: 0;
+  text-align: center;
+}
+#features p {
+  color: #701dbb;
+  font-weight: bold;
+  text-align: center;
+}
+#features #map img {
+  display: block;
+  margin: 0 auto;
+}
+#features #features-content {
+  color: #fff;
+}
+#features #features-content .container .row {
   text-align: center;
 }
