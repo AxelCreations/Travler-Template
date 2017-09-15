@@ -226,12 +226,12 @@ header
 	min-height 700px
 	padding-top 4em
 
-	h2
+	> h2
 		color white
 		margin 0
 		text-align center
 
-	p
+	> p
 		color darkMorado
 		font-weight bold
 		text-align center
@@ -249,11 +249,27 @@ header
 				.feature
 					&-icon
 						img
+							margin-bottom 2em
+	
+						&:after
+							content ''
+							display inline-block
+							background darkGris
+							height 0.21em
+							position relative
+							right -0.5em
+							top -1em
+							width 3.9em
+					
 					&-title
+						margin-bottom 1em
 						h3
+							text-align left
 					&-content
 						p
-							// 
+							color white
+							font-size 0.95em
+							text-align left
 		
 
 

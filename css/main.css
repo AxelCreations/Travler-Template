@@ -246,12 +246,12 @@ header .container .row #navigator div ul .Active .title {
   min-height: 700px;
   padding-top: 4em;
 }
-#features h2 {
+#features > h2 {
   color: #fff;
   margin: 0;
   text-align: center;
 }
-#features p {
+#features > p {
   color: #701dbb;
   font-weight: bold;
   text-align: center;
@@ -265,4 +265,28 @@ header .container .row #navigator div ul .Active .title {
 }
 #features #features-content .container .row {
   text-align: center;
+}
+#features #features-content .container .row .feature-icon img {
+  margin-bottom: 2em;
+}
+#features #features-content .container .row .feature-icon:after {
+  content: '';
+  display: inline-block;
+  background: #707070;
+  height: 0.21em;
+  position: relative;
+  right: -0.5em;
+  top: -1em;
+  width: 3.9em;
+}
+#features #features-content .container .row .feature-title {
+  margin-bottom: 1em;
+}
+#features #features-content .container .row .feature-title h3 {
+  text-align: left;
+}
+#features #features-content .container .row .feature-content p {
+  color: #fff;
+  font-size: 0.95em;
+  text-align: left;
 }
