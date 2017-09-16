@@ -257,15 +257,23 @@ header .container .row #navigator div ul .Active .title {
   font-weight: bold;
   text-align: center;
 }
-#features #map img {
-  display: block;
-  margin: 0 auto;
+#features #map #map-img {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 247px;
+  width: 100%;
 }
 #features #features-content {
   color: #fff;
 }
 #features #features-content .container .row {
   text-align: center;
+}
+#features #features-content .container .row .feature {
+  margin-bottom: 8em;
 }
 #features #features-content .container .row .feature-icon {
   position: relative;
@@ -281,7 +289,11 @@ header .container .row #navigator div ul .Active .title {
   left: 75%;
   position: absolute;
   top: 2.3em;
-  width: 11em;
+  width: 13em;
+}
+#features #features-content .container .row .feature:last-child .feature-icon:after {
+  content: '';
+  display: none;
 }
 #features #features-content .container .row .feature-title {
   margin-bottom: 1em;
@@ -293,4 +305,53 @@ header .container .row #navigator div ul .Active .title {
   color: #fff;
   font-size: 0.95em;
   text-align: left;
+}
+#features #features-screen {
+  background: #222;
+  border-top: 4px solid #1e1e1e;
+  max-height: 525px;
+  padding-top: 6em;
+}
+#features #features-screen .container {
+  position: relative;
+}
+#features #features-screen .container #screen {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 425px;
+  width: 100%;
+}
+#features #features-screen .container h3,
+#features #features-screen .container h5 {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+#features #features-screen .container h3 {
+  color: #fff;
+}
+#features #features-screen .container h5 {
+  -webkit-transform: translate(-50%, 400%);
+  -moz-transform: translate(-50%, 400%);
+  -o-transform: translate(-50%, 400%);
+  -ms-transform: translate(-50%, 400%);
+  transform: translate(-50%, 400%);
+  color: #fff;
+}
+#team {
+  background: #ebebeb;
+}
+#team h2,
+#team p {
+  margin: 0;
+  text-align: center;
 }
