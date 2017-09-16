@@ -213,14 +213,15 @@ header .container .row #navigator div ul .Active .title {
   position: relative;
 }
 #home #home-bg {
-  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: left;
+  height: 540px;
   overflow: hidden;
   position: relative;
   top: -12px;
   width: 100%;
-}
-#home #home-bg img {
-  z-index: 0;
 }
 #home .home-circle {
   background: #451a4a;
@@ -266,6 +267,9 @@ header .container .row #navigator div ul .Active .title {
 #features #features-content .container .row {
   text-align: center;
 }
+#features #features-content .container .row .feature-icon {
+  position: relative;
+}
 #features #features-content .container .row .feature-icon img {
   margin-bottom: 2em;
 }
@@ -274,10 +278,10 @@ header .container .row #navigator div ul .Active .title {
   display: inline-block;
   background: #707070;
   height: 0.21em;
-  position: relative;
-  right: -0.5em;
-  top: -1em;
-  width: 3.9em;
+  left: 75%;
+  position: absolute;
+  top: 2.3em;
+  width: 11em;
 }
 #features #features-content .container .row .feature-title {
   margin-bottom: 1em;
