@@ -255,7 +255,7 @@ header
 						position relative
 						img
 							margin-bottom 2em
-	
+
 						&:after
 							background darkGris
 							content ''
@@ -318,7 +318,7 @@ header
 			h2
 				color white
 				margin-bottom 0.25s
-			
+
 			h5
 				transform translate(-50%, 400%)
 				color rgba(white, .30)
@@ -351,7 +351,7 @@ header
 				width 25%
 
 			&:before
-				right 0 
+				right 0
 
 			&:after
 				left 0 
@@ -502,35 +502,72 @@ footer
 	font-size 0.7em
 	background #373737
 	color white
-	padding-top 4em	
+	padding-top 3em	
 
 	.container
 		.row
 			.logo
+				margin-bottom 2.5em
+				figure
+					position relative
+					left -0.5em
+
+					img
+						height 65px
+						width 270px
+
 			.description
+				margin-bottom 3.5em
 				p
 					font-size 0.9em
 					letter-spacing 0.05em
 					margin-bottom 2em
+					padding-right 10em
 
 			#foot-menu
-				margin-bottom 3em
+				margin 2em 0 3em 0
 				ul
 					li
-						border-right 1px solid white
-						padding 0 2.6em
-						
+						cursor pointer
+						margin 0 2.6em
+						padding-bottom 1em
+
+						&:after
+							border-right 1px solid white
+							content ''
+							height 2em
+							position relative
+							left 3em
+							width 1em
+
 						&:last-child
-							border none
-					
+							&:after
+								content ''
+								display none
+
 					.Active
 						border-bottom 4px solid morado
-					
+
 			#foot-socials
 				ul
 					li
 						font-weight bold
-						padding 0 2.1em
+						margin 0 1.9em
+
+						span
+							font-size 1.3em
+							font-weight 200
+							position relative
+							top 0.3em
+							margin-right 0.3em
+
+		#foot-info
+			margin-bottom 10em
+			ul
+				margin-bottom 3em
+
+			.info
+				color darkGris
 
 
 

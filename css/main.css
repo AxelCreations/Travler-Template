@@ -565,28 +565,68 @@ footer {
   font-size: 0.7em;
   background: #373737;
   color: #fff;
-  padding-top: 4em;
+  padding-top: 3em;
 }
-footer .container .row .logo p,
+footer .container .row .logo {
+  margin-bottom: 2.5em;
+}
+footer .container .row .logo figure {
+  position: relative;
+  left: -0.5em;
+}
+footer .container .row .logo figure img {
+  height: 65px;
+  width: 270px;
+}
+footer .container .row .description {
+  margin-bottom: 3.5em;
+}
 footer .container .row .description p {
   font-size: 0.9em;
   letter-spacing: 0.05em;
   margin-bottom: 2em;
+  padding-right: 10em;
 }
 footer .container .row #foot-menu {
-  margin-bottom: 3em;
+  margin: 2em 0 3em 0;
 }
 footer .container .row #foot-menu ul li {
-  border-right: 1px solid #fff;
-  padding: 0 2.6em;
+  cursor: pointer;
+  margin: 0 2.6em;
+  padding-bottom: 1em;
 }
-footer .container .row #foot-menu ul li:last-child {
-  border: none;
+footer .container .row #foot-menu ul li:after {
+  border-right: 1px solid #fff;
+  content: '';
+  height: 2em;
+  position: relative;
+  left: 3em;
+  width: 1em;
+}
+footer .container .row #foot-menu ul li:last-child:after {
+  content: '';
+  display: none;
 }
 footer .container .row #foot-menu ul .Active {
   border-bottom: 4px solid #8f33c4;
 }
 footer .container .row #foot-socials ul li {
   font-weight: bold;
-  padding: 0 2.1em;
+  margin: 0 1.9em;
+}
+footer .container .row #foot-socials ul li span {
+  font-size: 1.3em;
+  font-weight: 200;
+  position: relative;
+  top: 0.3em;
+  margin-right: 0.3em;
+}
+footer .container #foot-info {
+  margin-bottom: 10em;
+}
+footer .container #foot-info ul {
+  margin-bottom: 3em;
+}
+footer .container #foot-info .info {
+  color: #707070;
 }
