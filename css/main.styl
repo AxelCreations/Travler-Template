@@ -5,7 +5,7 @@
 gris = #EBEBEB
 darkGris = #707070
 textGris = #C7C7C7
-morado = #8038C2
+morado = #8F33C4
 darkMorado = #701DBB
 
 body
@@ -105,12 +105,13 @@ header
 
 					input
 						color morado
-						display inline-block
-						height 80%
-						font-size 0.9em
-						width 80%
 						border none
+						display inline-block
+						font-size 0.9em
+						height 80%
 						outline none
+						transition 0.6s font-size ease-in-out
+						width 80%
 						
 						&:focus
 							font-size 1.1em
@@ -256,9 +257,9 @@ header
 							margin-bottom 2em
 	
 						&:after
+							background darkGris
 							content ''
 							display inline-block
-							background darkGris
 							height 0.21em
 							left 75%
 							position absolute
@@ -284,41 +285,252 @@ header
 	#features-screen
 		background #222222
 		border-top 4px solid #1E1E1E
-		max-height 525px
-		padding-top 6em
+		padding-top 5%
 
 		.container
+			max-width 95%
+			min-width 95%
+			padding 0
 			position relative
 
-			#screen
-				background-size contain
-				background-position center
-				background-repeat no-repeat
-				height 425px
-				width 100%
+			.row
+				padding 0
+				height 450px
 
-			h3, h5
-				text-align center
-				position absolute
+				#screen
+					background-position bottom
+					background-repeat no-repeat
+					background-size contain
+					display block
+					max-height 80%
+					min-height 450px
+					vertical-align bottom
+					width 100%
+
+			h2, h5
+				bottom 35%
 				left 50%
-				top 50%
+				position absolute
+				text-align center
+				text-shadow 0.05em 0.1em 0.09em rgba(0, 0, 0, .4)
 				transform translate(-50%, 50%)
 
-			h3
+			h2
 				color white
+				margin-bottom 0.25s
 			
 			h5
 				transform translate(-50%, 400%)
-				color white
-				
+				color rgba(white, .30)
 
 #team
 	background #EBEBEB
+	color darkGris
+	padding-top 5em
+	border-bottom 4px solid morado
 
-	h2, p
+	h2, h5
 		margin 0
 		text-align center
 
+	.title-section
+		margin-bottom 5em
+
+		h2
+			margin-bottom 0.25em
+			overflow hidden
+			position relative
+
+			&:after, &:before
+				background textGris
+				border-bottom 2px solid white
+				content ''
+				height 4px
+				position absolute
+				top 0.5em
+				width 25%
+
+			&:before
+				right 0 
+
+			&:after
+				left 0 
+
+		h5
+			font-weight bold
+
+	#team-members
+		.container
+			#members
+				.row
+					#slide-controls
+						padding 2em 0
+
+						.controls
+							display inline-block
+							left 50%
+							position relative
+							transform translate(-50%, 0)
+
+							span
+								background darkGris
+								border-radius 50%
+								cursor pointer
+								display inline-block
+								height 10px
+								text-align center
+								width 10px
+
+							.Active
+								background morado
+
+					.member
+						padding-bottom 2em
+
+						&-img
+							height 210px
+							margin-bottom 2em
+							position relative
+							width 220px
+							z-index 0
+
+							&:before, &:after
+								background white
+								box-shadow 0em 0em 0.5em rgba(0, 0, 0, .5)
+								content ''
+								display block
+								height 210px
+								position absolute
+								width 220px
+								z-index 0
+
+							&:before
+								content ''
+								background white
+								transform rotate(-4deg)
+								z-index 0
+
+							&:after
+								content ''
+
+							img
+								left 5px
+								position absolute
+								top 5px
+								z-index 10
+
+							&-social
+								background morado
+								bottom 5px
+								height 42px
+								padding-left 0.5em
+								padding-top 0.2em
+								position absolute
+								right 5px
+								width 47px
+								z-index 10
+
+								span
+									text-align right
+									color white
+									font-size 2em
+
+						&-name
+							h4
+								font-weight bold 
+
+						&-skill
+							h5
+								text-align left
+								font-weight bold 
+
+			#half-cards, #wide-cards
+				.row
+					>div
+						padding-left 0
+
+					.half-card, .wide-card
+						background white
+						box-shadow 0 2px 2px rgba(grey, 0.4)
+						padding 4em 6em 4em 4em
+						position relative
+						margin-bottom 2em
+
+						&-option
+							background morado
+							cursor pointer
+							height 30px
+							left 0
+							padding-left 0.5em
+							position absolute
+							top 0
+							width 30px
+
+							span
+								color white
+								font-size 1.3em
+
+						&-title
+							h2
+								color black
+								font-weight bold
+								letter-spacing 0.05em
+								text-align left
+								margin-bottom 1em
+
+						&-description
+							p
+								color morado
+								font-size 0.9em
+								font-weight bold
+								letter-spacing 0.05em
+								margin-bottom 2em
+
+						&-content
+							p
+								color darkGris
+								letter-spacing 0.05em
+								font-size 0.9em
+
+					.half-card
+						min-height 482px
+
+					.wide-card
+						min-height 355px
+
+footer
+	font-size 0.7em
+	background #373737
+	color white
+	padding-top 4em	
+
+	.container
+		.row
+			.logo
+			.description
+				p
+					font-size 0.9em
+					letter-spacing 0.05em
+					margin-bottom 2em
+
+			#foot-menu
+				margin-bottom 3em
+				ul
+					li
+						border-right 1px solid white
+						padding 0 2.6em
+						
+						&:last-child
+							border none
+					
+					.Active
+						border-bottom 4px solid morado
+					
+			#foot-socials
+				ul
+					li
+						font-weight bold
+						padding 0 2.1em
 
 
 
